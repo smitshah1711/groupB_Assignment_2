@@ -11,6 +11,13 @@ func main() {
 	num := 5
 	factorialResult := factorial(num)
 	fmt.Printf("Factorial of %d: %d\n", num, factorialResult)
+	// Change the value of 'str' to test different strings
+	fmt.Println("-------------------------------------------------------------------")
+	fmt.Print("3.multiple \n")
+	fmt.Print("author name:Nishita Manojbhai Raviya   Student ID:500229175 \n")
+	var result int
+    result = mul(3, 4)
+    fmt.Println("The sum is:", result)
 	fmt.Println("-------------------------------------------------------------------")
 
 	fmt.Print("8.check whether the value of variable is greater than or less than 5 \n")
@@ -40,4 +47,13 @@ func greaterOrLess(number1 int, number2 int) {
 	} else {
 		fmt.Printf(" %d is less than %d \n", number1, number2)
 	}
+}
+
+
+//author name:Nishita Manojbhai Raviya
+//Student ID:500229175
+
+
+func mul(a, b int) int {
+    return a * b
 }
