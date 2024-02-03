@@ -16,8 +16,8 @@ func main() {
 	fmt.Print("3.multiple \n")
 	fmt.Print("author name:Nishita Manojbhai Raviya   Student ID:500229175 \n")
 	var result int
-    result = mul(3, 4)
-    fmt.Println("The sum is:", result)
+	result = mul(3, 4)
+	fmt.Println("The sum is:", result)
 	fmt.Println("-------------------------------------------------------------------")
 
 	// Fibonacci
@@ -26,6 +26,18 @@ func main() {
 	fibonacciLength := 10
 	fibonacciResult := fibonacci(fibonacciLength)
 	fmt.Printf("Fibonacci Series of length %d: %v\n", fibonacciLength, fibonacciResult)
+	fmt.Println("-------------------------------------------------------------------")
+
+	// Change the value of 'year' to test different years
+	fmt.Print("4.check whether year is Leap year \n")
+	fmt.Print("author name:Vishakhakumari Sureshbhai Patel  Student ID:500226405 \n")
+	year := 2023
+	leapyear := isLeapYear(year)
+	if leapyear {
+		fmt.Printf("%d is a leap year.\n", year)
+	} else {
+		fmt.Printf("%d is not a leap year.\n", year)
+	}
 	fmt.Println("-------------------------------------------------------------------")
 
 	fmt.Print("8.check whether the value of variable is greater than or less than 5 \n")
@@ -64,6 +76,15 @@ func fibonacci(n int) []int {
 	return fibSeries
 }
 
+// author name:Vishakhakumari Sureshbhai Patel
+// Student ID:500226405
+func isLeapYear(year int) bool {
+	// A leap year is divisible by 4,
+	// except for years that are divisible by 100,
+	// unless they are also divisible by 400.
+	return (year%4 == 0 && year%100 != 0) || (year%400 == 0)
+}
+
 func greaterOrLess(number1 int, number2 int) {
 	if number1 > number2 {
 		fmt.Printf(" %d is greater than %d \n", number1, number2)
@@ -72,11 +93,9 @@ func greaterOrLess(number1 int, number2 int) {
 	}
 }
 
-
 //author name:Nishita Manojbhai Raviya
 //Student ID:500229175
 
-
 func mul(a, b int) int {
-    return a * b
+	return a * b
 }
