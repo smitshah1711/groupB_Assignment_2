@@ -38,8 +38,20 @@ func main() {
 	} else {
 		fmt.Printf("%d is not a leap year.\n", year)
 	}
+
 	fmt.Println("-------------------------------------------------------------------")
-		fmt.Print("7. Reverse String \n")
+	//check whether number is even or odd.
+	fmt.Print("5.Check whether number is even or odd  \n")
+	fmt.Print("author name:Mehak Kapoor  Student ID:500231273 \n")
+	var number int
+
+	fmt.Print("Enter a number: ")
+	fmt.Scan(&number)
+
+	evenOrodd(number)
+	fmt.Println("-----------------------------------------------------------------------")
+
+	fmt.Print("7. Reverse String \n")
 	fmt.Print("author name:Asfaq Hussain  Student ID:500228114 \n")
 	var input string
 
@@ -118,6 +130,7 @@ func greaterOrLess(number1 int, number2 int) {
 func mul(a, b int) int {
 	return a * b
 }
+
 // author name:Asfaq Hussain
 // Student ID:500228114
 func reverseString(input string) string {
@@ -132,4 +145,15 @@ func reverseString(input string) string {
 // Student ID: 500227799
 func swap(a, b int) (int, int) {
 	return b, a
+}
+
+//author name:Mehak Kapoor
+//Student ID:500231273
+
+func evenOrodd(number int) {
+	if number%2 == 0 {
+		fmt.Printf("%d is an even number.\n", number)
+	} else {
+		fmt.Printf("%d is an odd number.\n", number)
+	}
 }
