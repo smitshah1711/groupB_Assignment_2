@@ -63,6 +63,14 @@ func main() {
 	greaterOrLess(number1, number2)
 	fmt.Println("-------------------------------------------------------------------")
 
+	fmt.Print("9. Swap two Numbers: \n")
+	fmt.Print("author name:Dhruv Ashvinbhai Jobanputra Student ID:500227799 \n")
+	x, y := 3, 7
+	fmt.Printf("The initial value of x and y: %d and %d \n", x, y)
+	x, y = swap(x, y)
+	fmt.Printf("After swapping: x=  %d  and y = %d \n ", x, y)
+	fmt.Println("-------------------------------------------------------------------------")
+
 }
 
 // author name:Smit Sandeepkumar Shah
@@ -120,3 +128,8 @@ func reverseString(input string) string {
 	return string(runes)
 }
 
+// author name: Dhruv Jobanputra
+// Student ID: 500227799
+func swap(a, b int) (int, int) {
+	return b, a
+}
