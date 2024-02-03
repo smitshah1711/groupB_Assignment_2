@@ -75,6 +75,8 @@ func main() {
 	greaterOrLess(number1, number2)
 	fmt.Println("-------------------------------------------------------------------")
 
+	checkSign(10)
+
 	fmt.Print("9. Swap two Numbers: \n")
 	fmt.Print("author name:Dhruv Ashvinbhai Jobanputra Student ID:500227799 \n")
 	x, y := 3, 7
@@ -155,5 +157,17 @@ func evenOrodd(number int) {
 		fmt.Printf("%d is an even number.\n", number)
 	} else {
 		fmt.Printf("%d is an odd number.\n", number)
+	}
+}
+
+// author name:Akshit Malik
+// Student ID:500228578
+func checkSign(num int) {
+	if num > 0 {
+		println("The given number is positive")
+	} else if num < 0 {
+		println("The given number is negative")
+	} else {
+		println("The given number is zero")
 	}
 }
