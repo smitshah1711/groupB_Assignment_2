@@ -39,6 +39,17 @@ func main() {
 		fmt.Printf("%d is not a leap year.\n", year)
 	}
 	fmt.Println("-------------------------------------------------------------------")
+		fmt.Print("7. Reverse String \n")
+	fmt.Print("author name:Asfaq Hussain  Student ID:500228114 \n")
+	var input string
+
+	fmt.Print("Enter a string: ")
+	fmt.Scan(&input)
+
+	reversedString := reverseString(input)
+
+	fmt.Printf("Reversed String: %s\n", reversedString)
+	fmt.Println("-----------------------------------------------------------------------")
 
 	fmt.Print("8.check whether the value of variable is greater than or less than 5 \n")
 	fmt.Print("author name:Hirenkumar Savani   Student ID:500226947 \n")
@@ -99,3 +110,13 @@ func greaterOrLess(number1 int, number2 int) {
 func mul(a, b int) int {
 	return a * b
 }
+// author name:Asfaq Hussain
+// Student ID:500228114
+func reverseString(input string) string {
+	runes := []rune(input)
+	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
+		runes[i], runes[j] = runes[j], runes[i]
+	}
+	return string(runes)
+}
+
