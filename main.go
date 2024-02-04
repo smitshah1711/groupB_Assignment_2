@@ -85,6 +85,12 @@ func main() {
 	fmt.Printf("After swapping: x=  %d  and y = %d \n ", x, y)
 	fmt.Println("-------------------------------------------------------------------------")
 
+	//author name:Dilpreet Singh Hardoi
+	//Student ID:500218797
+	//Creating a map
+	fmt.Print("10. Mapping \n")
+	fmt.Print("author name:Dilpreet Singh Hardoi  Student ID:500218797 \n")
+	mapping()
 }
 
 // author name:Smit Sandeepkumar Shah
@@ -170,4 +176,21 @@ func checkSign(num int) {
 	} else {
 		println("The given number is zero")
 	}
+}
+
+// Auther - Dilpreet Singh Hardoi
+// Student ID - 500218797
+// This function illustrate the use of map object.
+func mapping() {
+	grades := map[string]int{
+
+		"Dilpreet": 90,
+		"Bob":      85,
+		"Charlie":  95,
+	}
+	fmt.Println("Grades list before updating: ", grades)
+
+	grades["Jarvis"] = 75
+	fmt.Println("All Grades after updating: ", grades)
+	fmt.Println("The Value of Dilpreet is : ", grades["Dilpreet"])
 }
